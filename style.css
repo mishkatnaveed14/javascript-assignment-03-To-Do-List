@@ -1,0 +1,10 @@
+:root {
+  --bg-color: #1f2128;
+  --card-bg: #282a36;
+  --primary-blue: #2980b9;
+  --primary-green: #2ecc71;
+  --delete-red: #e91e63;
+  --text-main: #ffffff;
+  --text-muted: #bdc3c7;
+  --completed-task: #454d55;
+}
