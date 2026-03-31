@@ -1,10 +1,66 @@
 :root {
-  --bg-color: #1f2128;
-  --card-bg: #282a36;
-  --primary-blue: #2980b9;
-  --primary-green: #2ecc71;
-  --delete-red: #e91e63;
-  --text-main: #ffffff;
-  --text-muted: #bdc3c7;
-  --completed-task: #454d55;
+    --bg-color: #1f2128;
+    --card-bg: #282a36;
+    --primary-blue: #2980b9;
+    --primary-green: #2ecc71;
+    --delete-red: #e91e63;
+    --text-main: #ffffff;
+    --text-muted: #bdc3c7;
+    --completed-task: #454d55;
+}
+
+body {
+    background-color: var(--card-bg);
+}
+
+.container1 {
+    width: 100%;
+    max-width: 380px;
+    min-height: 550px;
+    border: 3px solid white;
+    border-radius: 25px;
+    padding: 30px 20px;
+    margin: 80px 60px !important;
+    box-shadow: 10px 10px 20px #16181d,
+        -5px -5px 15px #3a3e4d;
+
+
+
+}
+
+.container2 {
+    /* border: 2px solid white; */
+    width: 100%;
+    min-width: 380px;
+    min-height: 550px;
+}
+
+.input-wrapper {
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btns {
+    color: var(--text-main);
+    background-color: var(--delete-red);
+    width: 37px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center !important;
+    border: none;
+    cursor: pointer;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.con-2-hd{
+    color: var(--primary-green);
+    padding: 3rem 7rem ;
+}
+.con-2-hd_1{
+    letter-spacing: 1.5px;
 }
