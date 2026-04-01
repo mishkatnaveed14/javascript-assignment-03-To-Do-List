@@ -23,16 +23,10 @@ body {
     margin: 80px 60px !important;
     box-shadow: 10px 10px 20px #16181d,
         -5px -5px 15px #3a3e4d;
-
-
-
 }
 
 .container2 {
-    /* border: 2px solid white; */
     width: 100%;
-    min-width: 380px;
-    min-height: 550px;
 }
 
 .input-wrapper {
@@ -57,10 +51,111 @@ body {
     justify-content: center;
     flex-direction: row;
 }
+.edit-btn {
+    background-color: var(--primary-blue);
+     color: white;
+}
+.del-btn {
+    background-color: var(--delete-red);
+      color: white;
+}
 .con-2-hd{
     color: var(--primary-green);
-    padding: 3rem 7rem ;
 }
 .con-2-hd_1{
     letter-spacing: 1.5px;
+}
+
+#ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.task-item {
+    background: var(--primary-blue);
+    color: var(--text-main);
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.task-item button:hover {
+    transform: scale(1.15);
+}
+.task-item span {
+    color: white;
+    flex: 1;
+    font-size: 19px;
+}
+.task-item div {
+    display: flex;
+    gap: 8px;
+}
+
+#input {
+    border: none;
+    outline: none;
+    padding-left: 15px;
+}
+
+.btn-group {
+    display: flex;
+    gap: 8px;
+}
+
+@media (min-width: 993px) {
+    .container2 {
+        width: 100%;          
+        min-width: 380px;     
+        min-height: 550px;    
+    }
+
+    .con-2-hd {
+        padding: 3rem 7rem;    
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column; 
+        align-items: center;
+        gap: 20px;
+    }
+
+    .container2 {
+        order: -1;
+        width: 90%; 
+        text-align: center;
+          padding: 10px 0; 
+    }
+
+    .container1 {
+        width: 90%; 
+    }
+
+    .input-wrapper {
+        flex-direction: row; 
+        width: 100%;
+    }
+
+    .input-wrapper input {
+        width: 75%;
+    }
+
+    #ul {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .container1, .container2 {
+        width: 100%;
+        padding: 0 10px;
+    }
+     .container2 {
+        padding: 5px 0;     
+}
 }
